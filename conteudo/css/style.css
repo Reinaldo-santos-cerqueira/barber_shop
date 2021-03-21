@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    transition: 0.6s;
+    font-family: 'Noto Sans', sans-serif;
+
+    padding:40px 100px;
+    z-index: 100000;
+}
+.stiky{
+    background:#161616  !important; 
+    padding:10px 100px;
+    color:#ffffff;
+}
+
+
+header ul {
+    position: relative;
+    float: right;
+    top: 30px;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 1vh;
+    text-decoration: none !important;
+    color: #ffffff;
+    font-size:20px;
+    letter-spacing:1px;
+    font-weight: bold;
+    transition:0.6s;
+}
+.stiky ul li a{
+    position: relative;
+    margin: auto 1vh;
+    text-decoration: none;
+    font-size:20px;
+    letter-spacing:1px;
+    font-weight: bold;
+
+    transition:0.6s;
+}
+header ul li a:hover{
+    color:#FFFFFF99;
+}
+.stiky ul li a:hover{
+    color:#00000099;
+}
+/*Parallax*/
+#parallax{
+    background: url(../images/carlos-magno-s63RoVQ40w8-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+#opacity{
+    background-color: #00000088;
+    width: 100%;
+    height: 100vh;
+}
+/*Boas Vindas*/
+#boas-vindas{
+    margin: 5vh 0;
+}
+#boas-vindas p{
+    color: #8b8b8b;
+    font-size: 1.3rem;
+    margin-top: 2vh;
+}
+/* banner*/
+#banner{
+    background-image: url(../images/dwi-rina-xe4Q1AUB1ZA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 50vh;
+}
+#banner-opacity{
+    background-color: #00000088;
+    height:50vh;
+}
+#button-banner{
+    padding-top: 20vh;
+}
+#banner-opacity a{
+    padding: 30px;
+    font-size:2rem;
+    background-color: #00000099;
+    color: #8b8b8b;
+    margin-top:15vh;
+    border-radius:50px;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    text-decoration: none;
+}
+#banner-opacity a:hover{
+    text-decoration:none;
+    border-color:#FFF;
+    color: #F5F5F5;
+}
+/*Equipe*/
+#equipe{
+    margin: 10vh 0;
+}
+#equipe h1{
+    margin-bottom: 5vh;
+    color: #8b8b8b;
+}
+#card-equipe{
+    color: #8b8b8b;
+    background-color: transparent;
+    padding:20px;
+    border: 1px solid #010101;
+    box-shadow: 5px 5px 5px 5px #010101;
+}
+#card-equipe a{font-size:2rem; padding:2vh;color: #8b8b8b}
+#card-equipe a:hover{color: #F1f1f1;}
+
+/*Banner 2*/
+#banner2{
+    background-image: url(../images/mostafa-meraji-5npGPG0sSVk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 50vh;
+}
+#opacity-banner2{
+    background-color: #00000088;
+    height:50vh;
+}
+/*Serviços*/
+#servicos{
+    margin: 10vh 0;
+}
+#servicos h1{
+    margin-bottom: 5vh;
+    color: #8b8b8b;
+}
+#servicos #card-servicos{
+    background: transparent;
+    border: 1px solid #000;
+    padding:20px;
+    color: #8b8b8b;
+}
+#servicos .card-text{
+    display:none;
+}
+#servicos #card-servicos:hover  .card-text{display:block;font-size: 2rem;transition:0.5s}
