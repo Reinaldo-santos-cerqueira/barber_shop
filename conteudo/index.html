@@ -13,11 +13,11 @@
     <header>
         <img class="logo" src="images/LogoMakr-4M4Bup (1).png" alt="">
       <ul>
-        <li> <a href="#">Home</a></li>
-        <li> <a href="#">Equipes</a></li>
-        <li> <a href="#">Serviços</a></li>
-        <li> <a href="#">Agendamento</a></li>
-        <li> <a href="#">Contatos</a></li>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="#equipe">Equipes</a></li>
+        <li> <a href="#servicos">Serviços</a></li>
+        <li> <a href="#form-agendamento">Agendamento</a></li>
+        <li> <a href="#footer">Contatos</a></li>
       </ul>
     </header>
     <main>
@@ -81,7 +81,7 @@
             <h1 class="col-md-12 text-center">Serviços</h1>
             <div class="col-md-3">
               <div id="card-servicos" class="card text-center">
-                <img class="card-img-top" src="images/barbershop-2605079_640.jpg" alt="">
+                <img class="card-img-top" height="200px" src="images/barbershop-2605079_640.jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Corte na maquina</h4>
                   <p class="card-text">R$:15,00</p>
@@ -90,7 +90,7 @@
             </div>
             <div class="col-md-3">
               <div id="card-servicos" class="card text-center">
-                <img class="card-img-top" src="images/barber-1979440_640.jpg" alt="">
+                <img class="card-img-top" height="200px" src="images/barber-1979440_640.jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Barba</h4>
                   <p class="card-text">R$:15,00</p>
@@ -98,8 +98,8 @@
               </div>
             </div>
             <div class="col-md-3">
-              <div id="card-servicos" class="card text-center">
-                <img class="card-img-top" src="images/hairdresser-1179459_640.jpg" alt="">
+              <div id="card-servicos"class="card text-center">
+                <img class="card-img-top" height="200px" src="images/hairdresser-1179459_640.jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Corte na Tesoura</h4>
                   <p class="card-text">R$:20,00</p>
@@ -108,18 +108,71 @@
             </div>
             <div class="col-md-3">
               <div id="card-servicos" class="card text-center">
-                <img class="card-img-top" src="images/barber-2507764_640.jpg" alt="">
+                <img class="card-img-top" height="200px" src="images/barber-2507764_640.jpg" alt="">
                 <div class="card-body">
-                  <h4 class="card-title">Kit barba e cabelo</h4>
-                  <p class="card-text">R$:25,00</p>
+                  <h4 class="card-title">Combo barba e cabelo</h4>
+                  <p class="card-text">R$:30,00</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section id="form-agendamento">
+        <div id="banner-form" padding="10vh 0">
+          <div class="banner-form-opacity">
+            <h1 class="text-center"style="color: #f5f5f5; margin:5vh 0;">Agende Aqui seu horario</h1>
+            <form action="https://formspree.io/f/mknpbpnl"method="POST">              
+            <label for="nome">Nome</label>
+              <input required type="text" name="nome" id="nome" placeholder="Digite seu nome">
+              <label for="phone">Telefone</label>
+              <input required type="text" name="phone" id="phone" placeholder="Digite seu Telefone"onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+              <label for="servicos">Qual o serviço você deseja?</label>
+              <select name="servicos" id="servicos-form">
+                <option value="corte_maquina">Corte Maquina</option>
+                <option value="corte_tesoura">Corte Tesoura</option>
+                <option value="barba">Barba</option>
+                <option value="combo_barba_e_cabelo">Combo barba e cabelo</option>
+              </select>
+              <label for="date">Data</label>
+              <input type="date" name="date" id="date">
+              <label for="hora">Horario</label>
+              <select name="hora" id="hora">
+                <option value="08:00">08:00 - 09:00</option>
+                <option value="09:00">09:00 - 10:00</option>
+                <option value="10:00">10:00 - 11:00</option>
+                <option value="11:00">11:00 - 12:00</option>
+                <option value="13:00">13:00 - 14:00</option>
+                <option value="14:00">14:00 - 15:00</option>
+                <option value="15:00">15:00 - 16:00</option>
+                <option value="16:00">16:00 - 17:00</option>
+                <option value="17:00">17:00 - 18:00</option>
+                <option value="18:00">18:00 - 19:00</option>
+                <option value="19:00">19:00 - 20:00</option>
+              </select>
+              <input type="submit" value="Agendar">
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 style="margin:10vh 0 5vh 0; color:#8b8b8b;">Sigam-nos</h2>
+            <div id="redes-socias">
+              <a href=""><i class="fab fa-facebook-square"></i></a>
+              <a href=""><i class="fab fa-whatsapp"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3  style="margin:10vh 0 5vh 0;"><a style="color:#8b8b8b;" href="https://www.google.com/maps/place/Tancredo+Neves,+Salvador+-+State+of+Bahia,+40301-110/@-12.9463237,-38.4543264,16z/data=!3m1!4b1!4m5!3m4!1s0x7161a8f62100c7b:0x3d527c6542035bb3!8m2!3d-12.9438308!4d-38.4496208"><i class="fas fa-map-marker-alt" style="margin:1vh;"></i>Rua da Romã Condominio Arvoredo</a></h3>
+            <h3 style="margin:0vh 0 5vh 2vh;"><a style="color:#8b8b8b;"><i style="margin: 1vh;"class="fas fa-phone-volume"></i>71 9 88820 8455</a></h3>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

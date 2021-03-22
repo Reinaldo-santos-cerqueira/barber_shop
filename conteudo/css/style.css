@@ -60,11 +60,11 @@ header ul li a:hover{
     color:#FFFFFF99;
 }
 .stiky ul li a:hover{
-    color:#00000099;
+    color:#FFFFFF99;
 }
 /*Parallax*/
 #parallax{
-    background: url(../images/carlos-magno-s63RoVQ40w8-unsplash.jpg);
+    background: url(../images/barbershop-4762345_1280\ \(1\).jpg);
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -131,10 +131,17 @@ header ul li a:hover{
     padding:20px;
     border: 1px solid #010101;
     box-shadow: 5px 5px 5px 5px #010101;
+}#card-equipe:hover{
+    box-shadow: 1px 1px 1px 1px #010101 ;
 }
-#card-equipe a{font-size:2rem; padding:2vh;color: #8b8b8b}
-#card-equipe a:hover{color: #F1f1f1;}
-
+#card-equipe a{
+    font-size:2rem;
+    padding:2vh;
+    color: #8b8b8b;
+}
+#card-equipe a:hover{
+    color: #F1f1f1;
+}
 /*Banner 2*/
 #banner2{
     background-image: url(../images/mostafa-meraji-5npGPG0sSVk-unsplash.jpg);
@@ -158,11 +165,64 @@ header ul li a:hover{
 }
 #servicos #card-servicos{
     background: transparent;
-    border: 1px solid #000;
+    border: 2px solid #000;
+    border: ;
     padding:20px;
     color: #8b8b8b;
 }
 #servicos .card-text{
-    display:none;
+    font-size: 1.5rem;
 }
-#servicos #card-servicos:hover  .card-text{display:block;font-size: 2rem;transition:0.5s}
+
+#servicos .card-title{
+    transition:1s;
+    font-size: 1rem;
+
+}
+
+/*Agendamento*/
+#banner-form{
+    background: url(../images/carlos-magno-s63RoVQ40w8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-form-opacity{
+    width: 100%;
+    padding: 50px;
+    background: rgba(0,0,0,.8);
+}
+form {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    max-width: 600px;
+    margin: auto auto;
+    padding: 32px 64px;
+    outline: 0;
+    display: flex;
+    flex-direction: column;
+    color:#FbFbFb;
+}
+label,input,select{
+    width: 100%;
+    margin: 1vh;
+    padding: 10px;
+    border-radius: 50px;
+}
+label:focus,input:focus,select:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+input:last-child{
+    margin-top: 4vh;
+    background-color: #161616;
+    border: none;
+    color: #F1F1F1;   
+    cursor:pointer;
+}
+#redes-socias i{
+    color: #8b8b8b;
+    font-size:2rem;
+    margin: 0 2vh 5vh 2vh;
+}
