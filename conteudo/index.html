@@ -11,24 +11,44 @@
   </head>
   <body style="background-color: #1c1c1c;">
     <header>
-        <img class="logo" src="images/LogoMakr-4M4Bup (1).png" alt="">
-      <ul>
-        <li> <a href="index.html">Home</a></li>
-        <li> <a href="#equipe">Equipes</a></li>
-        <li> <a href="#servicos">Serviços</a></li>
-        <li> <a href="#form-agendamento">Agendamento</a></li>
-        <li> <a href="#footer">Contatos</a></li>
-      </ul>
-    </header>
+      <nav id="menu-desktop">
+          <img class="logo" src="images/LogoMakr-4M4Bup (1).png" alt="">
+        <ul id="ul-menu-desktop">
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="#equipe">Equipes</a></li>
+          <li> <a href="#servicos">Serviços</a></li>
+          <li> <a href="#form-agendamento">Agendamento</a></li>
+          <li> <a href="#footer">Contatos</a></li>
+        </ul>
+      </nav>
+      <nav id="menu-mobile">
+        <i class="fas fa-bars"onclick="menu_open()"></i>
+        <ul id="ul-menu-mobile">
+          <i class="fas fa-times"onclick="menu_close()" id="menu_mobile_close"></i>
+          <img src="images/LogoMakr-4M4Bup (1).png" alt="">
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="#equipe">Equipes</a></li>
+          <li> <a href="#servicos">Serviços</a></li>
+          <li> <a href="#form-agendamento">Agendamento</a></li>
+          <li> <a href="#footer">Contatos</a></li>
+        </ul>
+    </nav>
+      </header>
     <main>
       <div id="parallax">
         <div id="opacity"></div>
       </div>
       <section id="boas-vindas">
-        <img src="images/LogoMakr-6oyrum.png" width="500px" style="display:block;margin-left: auto; margin-right: auto;" alt="">
         <div class="container">
-          <p class="text-center">Bem vindo a Kingsman a melhor barbearia de Salvador te convido a conhecer nosso site, nossa equipe e nossos serviços </p>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <img src="images/LogoMakr-6oyrum.png" style="max-width:500px;width:100%" alt="">
+            </div>
+            <div class="col-md-12">
+              <p class="text-center">Bem vindo a Kingsman a melhor barbearia de Salvador te convido a conhecer nosso site, nossa equipe e nossos serviços </p>
+            </div>
         </div>
+      </div>
       </section>
       <section id="banner"class="text-center">
         <div id="banner-opacity">
@@ -46,7 +66,7 @@
                 <img class="card-img-top" src="images/model-2911332_640.jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Barbeiro 1</h4>
-                  <p class="card-text"><a href=""><i class="fab fa-facebook-square"></i></a><a href=""><i class="fab fa-whatsapp-square"></i></a><a href=""><i class="fab fa-instagram-square"></i></a>
+                  <p class="card-text"><a href=""><i class="fab fa-facebook-square"></i></a><a href=""><i class="fab fa-whatsapp"></i></a><a href=""><i class="fab fa-instagram"></i></a>
                   </p>
                 </div>
               </div>
@@ -56,7 +76,7 @@
                 <img class="card-img-top" src="images/sigmund-QjCNk0TxGfc-unsplash.jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Barbeiro 1</h4>
-                  <p class="card-text"><a href=""><i class="fab fa-facebook-square"></i></a><a href=""><i class="fab fa-whatsapp-square"></i></a><a href=""><i class="fab fa-instagram-square"></i></a>
+                  <p class="card-text"><a href=""><i st class="fab fa-facebook-square"></i></a><a href=""><i class="fab fa-whatsapp"></i></a><a href=""><i class="fab fa-instagram"></i></a>
                   </div>
               </div>
             </div>
@@ -65,7 +85,7 @@
                 <img class="card-img-top" src="images/jonas-kakaroto-KIPqvvTOC1s-unsplash (1).jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Barbeiro 1</h4>
-                  <p class="card-text"><a href=""><i class="fab fa-facebook-square"></i></a><a href=""><i class="fab fa-whatsapp-square"></i></a><a href=""><i class="fab fa-instagram-square"></i></a>
+                  <p class="card-text"><a href=""><i class="fab fa-facebook-square"></i></a><a href=""><i class="fab fa-whatsapp"></i></a><a href=""><i class="fab fa-instagram"></i></a>
                   </div>
               </div>
             </div>

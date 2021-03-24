@@ -27,7 +27,7 @@ header{
 }
 
 
-header ul {
+header #ul-menu-desktop {
     position: relative;
     float: right;
     top: 30px;
@@ -36,7 +36,7 @@ header ul {
     align-items:center;
     list-style: none;
 }
-header ul li a{
+header #ul-menu-desktop li a{
     position: relative;
     margin: 0 1vh;
     text-decoration: none !important;
@@ -46,9 +46,9 @@ header ul li a{
     font-weight: bold;
     transition:0.6s;
 }
-.stiky ul li a{
+.stiky #ul-menu-desktop li a{
     position: relative;
-    margin: auto 1vh;
+    margin: 1vh 1vh;
     text-decoration: none;
     font-size:20px;
     letter-spacing:1px;
@@ -56,11 +56,14 @@ header ul li a{
 
     transition:0.6s;
 }
-header ul li a:hover{
+header #ul-menu-desktop li a:hover{
     color:#FFFFFF99;
 }
-.stiky ul li a:hover{
+.stiky #ul-menu-desktop li a:hover{
     color:#FFFFFF99;
+}
+header #menu-mobile{
+    display: none;
 }
 /*Parallax*/
 #parallax{
@@ -69,7 +72,7 @@ header ul li a:hover{
     height: 100vh;
     background-position: center;
     background-size: cover;
-
+    background-attachment: fixed;
 }
 #opacity{
     background-color: #00000088;
@@ -136,11 +139,21 @@ header ul li a:hover{
 }
 #card-equipe a{
     font-size:2rem;
-    padding:2vh;
+    padding:0 2vh;
     color: #8b8b8b;
 }
-#card-equipe a:hover{
-    color: #F1f1f1;
+#card-equipe a:hover:first-child{
+    color: #3b5998;
+    background-color: white;
+}
+#card-equipe a:hover:nth-child(2){
+    color: #f1f1f1;
+    background-color: #77dd77;
+}
+#card-equipe a:hover:nth-child(3){
+    color: #f1f1f1;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 /*Banner 2*/
 #banner2{
@@ -166,7 +179,6 @@ header ul li a:hover{
 #servicos #card-servicos{
     background: transparent;
     border: 2px solid #000;
-    border: ;
     padding:20px;
     color: #8b8b8b;
 }
@@ -221,8 +233,103 @@ input:last-child{
     color: #F1F1F1;   
     cursor:pointer;
 }
-#redes-socias i{
+#redes-socias a{
     color: #8b8b8b;
     font-size:2rem;
     margin: 0 2vh 5vh 2vh;
+    padding: 5px 10px;
+}
+#redes-socias a:hover:first-child{
+    color: #3b5998;
+    background-color: white;
+}
+#redes-socias a:hover:nth-child(2){
+    color: #f1f1f1;
+    background-color: #77dd77;
+}
+#redes-socias a:hover:nth-child(3){
+    color: #f1f1f1;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+/*media*/
+
+@media screen and (max-width: 1024px) {
+    header #ul-menu-desktop {
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #parallax{
+        background: url(../images/barbershop-4762345_640.jpg);
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    header #menu-desktop {
+      display: none;
+    }
+    header #menu-mobile {
+        display: block;
+        color: #F1f1f1;
+    }
+    header #menu-mobile i{        
+        font-size:2rem;
+        right:10vw;
+        top: 5vh;
+        position: absolute;
+        cursor: pointer;}
+    #ul-menu-mobile{
+        position: absolute;
+        font-size: 1.5rem;
+        top: 0;
+        right: -200vh;
+        width: 90vw;
+        height:100vh;
+        background-color: #161616;
+        text-align: center;
+        align-items: center;
+        transition: 1s ease-in-out;   
+    }
+    #ul-menu-mobile i{
+        font-size:2rem;
+        right:10vw;
+        top: 5vh;
+        position: absolute;
+        cursor: pointer;
+    }
+    #ul-menu-mobile img{
+        margin-top:10vh;
+    }
+    #ul-menu-mobile li{
+        margin: 5vh;
+    }
+    #ul-menu-mobile li a{
+        color:#F1F1F1;
+        text-decoration: none;
+    }
+    .stiky{
+        background:transparent !important; 
+    }
+    .banner-form-opacity{
+        width: 100%;
+        padding: 0 10px 50px 10px;
+        background:transparent !important;
+    }
+    #footer{
+        text-align: center;
+    }
+    .card{
+        margin:5vh 0;
+    }
+    #banner2{
+        background-image: url(../images/mostafa-meraji-5npGPG0sSVk-unsplash2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
